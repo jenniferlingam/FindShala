@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--	<ListView-->
+    <!--	android:id="@+id/listViewdemo"-->
+    <!--	android:layout_width="match_parent"-->
+    <!--	android:layout_height="match_parent" -->
+    <!--	android:divider="#ad5"-->
+    <!--	android:dividerHeight="2dp"-->
+    <!--	android:layout_marginTop="80dp"	-->
+    <!--		/>-->
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:layout_margin="15dp"
+        android:queryHint="Search here">
+
+    </SearchView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:focusable="true"
+        android:scrollbars="vertical"
+        app:cardCornerRadius="12dp"
+        app:contentPadding="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/school_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/school1" />
+
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="21dp"
+            android:hint="Name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/school_address"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="62dp"
+            android:hint="Address"
+            android:textColor="#690101" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
